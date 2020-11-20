@@ -95,10 +95,12 @@ main {
 .item-cat {
     background-color: #F3F3F3;
     margin-bottom: 20px;
+    
 }
 .item-foto {
     position: relative;
 }
+
 .sale {
     position: absolute;
     top: 35px;
@@ -276,4 +278,126 @@ footer .container {
 }
 .sub-news:disabled+label::before {
     background-color: #e9ecef;
+}
+@media (max-width: 1220px) {
+    nav {
+        left: 0;
+    }
+    .header {
+        justify-content: space-around;
+    }
+    .search-result-text {
+        margin-left: 20px;
+    }
+    .item-cat {
+        flex-basis: 33%;
+        margin: 10px 0;
+    }
+    .filter-result {
+        margin: 10px;
+    }
+    .item-avatar {
+        width: 100%;
+    }
+    .filter {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    
+    .phoneNumber span:first-child{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .like {
+        top: 15px;
+        right: 15px;
+    }
+    .sale {
+        top: 15px;
+        left: 15px;
+    }
+}
+@media (max-width: 960px) {
+    
+    .navigation li {
+        margin-right: 10px;
+    }
+    .item-info_details::before {
+        display: none;
+    }
+}
+@media (max-width: 868px) {
+    .item-info_details {
+        flex-direction: column;
+    }
+    .footer-wrap {
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+}
+@media (max-width: 768px) {
+    
+    .search-result-text {
+        font-size: 24px;
+    }
+    .item-cat {
+        flex-basis: 49%;
+    }
+    .item-info_details {
+        flex-direction: row;
+    }
+    .footer-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .footer-form {
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .header {
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo {
+        display: none;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+    .phoneNumber {
+        align-self: stretch;
+        margin-right: 10px;
+    }
+    .item-info_details {
+        flex-direction: column;
+    }
+    .more {
+        margin: 35px;
+    }
+}
+@media (max-width: 504px) {
+    .item-cat {
+        flex-basis: 95%;
+        margin: 10px auto;
+    }
+    .item-info_details {
+        flex-direction: row;
+    }
+    
+}
+@media (max-width: 480px) {
+    .item-info_details {
+        flex-direction: column;
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
