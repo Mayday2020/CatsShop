@@ -8,35 +8,27 @@ body {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #fff;
 }
 header {  
     color: #fff;
     font-size: 18px;
-}
-.header-img {
-    position: absolute;
-    top: 0;
-    z-index: -2;
-}
-.dark-filter {
-    position: absolute;
-    top: 0;
-    width: 1440px;
-    height: 252px;
-    z-index: -1;
-    background-color: #000;
-    opacity: 0.7;
+    background: no-repeat center url(../image/Rectangle\ 1.png),
+    no-repeat center url(../image/stephen-leonardi-Al9Cl-b7EFU-unsplash\ 1.png);
 }
 .container {
     max-width: 1180px;
     margin: 0 auto;
+}
+.container-header {
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
-    margin-top: 40px;
 }
 nav {
     position: relative;
@@ -67,7 +59,6 @@ a:hover {
 .search-result-text {
     font-size: 38px;
     font-weight: 400;
-    margin-bottom: 65px;
 }
 main {
     background-color: #fff;
@@ -172,6 +163,7 @@ main {
     border: 1px solid #CACACA;
     border-radius: 10px;
     font-size: 14px;
+    color: #000;
 }
 .arrow-up {
     position: absolute;
@@ -219,6 +211,7 @@ footer .container {
 .subscribe-button {
     flex-basis: 43%;
     border-radius: 10px;
+    border: none;
     background: #6EBBD3;
     color: #fff;
 }
@@ -380,8 +373,18 @@ footer .container {
     .more {
         margin: 35px;
     }
+    .subscribe {
+        flex-direction: column;
+    }
+    .subscribe-button {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #email {
+        padding: 15px;
+    }
 }
-@media (max-width: 504px) {
+@media screen and (max-width: 504px) {
     .item-cat {
         flex-basis: 95%;
         margin: 10px auto;
@@ -391,7 +394,7 @@ footer .container {
     }
     
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .item-info_details {
         flex-direction: column;
     }
